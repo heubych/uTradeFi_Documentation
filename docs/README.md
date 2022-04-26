@@ -13,7 +13,7 @@ Investing has never been easier!
 
 ## Version
 
-?>The documentation reflects the state of the project as of **31st May 2022**
+?>The documentation reflects the state of the project as of **30th April 2022**
 
 uTradeFi is based on a proprietary concept developed by Christian Heuby
 
