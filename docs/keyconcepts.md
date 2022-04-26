@@ -1,0 +1,76 @@
+# Key concepts
+
+## Synthetic tracker
+
+uTradeFi enables investors to create customized synthetic trackers "sTrack". A synthetic tracker is an asset that tracks the value of various underlying assets without the need to buy the underlying assets. The composition of the synthetic trackers reflect the trading activity of the investors. There are as many synthetic trackers as investors as each investor can setup its own asset allocation rule. The pricing of the synthetic trackers is a function of the quantity of the assets it's tracking and the prices of the underlying assets. The content of the synthetic trackers are represented in the blockchain by specific smart contracts. Synthetic trackers are represented by the quantity of underlying assets it's tracking and is a function of the trading history of the investors. The composition of the trackers is dynamic and changes over time based on new trading instructions.
+
+Investors customize the composition of their synthetic tracker by setting up trading rules via "smart trading" functionalities the protocol offers. The valuation of the synthetic tracker is performed by blockchain Oracles  that independently provide pricing feeds to the protocol.  
+
+The individual performance of each synthetic tracker is realized by the investor via an advanced collateralization mechanisms whereby the losses are covered by the collateral posted by the investor itself and the gains by the Collateralized Debt Pool issuers.
+
+?> Synthetic trackers are onchain representation of exposures across multiple assets and unique to each investor.
+
+## Peer-to-Contract trading
+
+uTradeFi is based on synthetic exposures and doesn't require connectivity to Decentralized exchanges (DeX) or Centralized exchanges (CeX). All trades are executed against smart contracts, commonly known as peer-to-contract trading (P2C). Synthetic exposures are minted and burned accordingly to the trading activity in the pool. When an investor converts a synthetic asset into another one (e.g. convert ETH into BTC), a corresponding amount of ETH is burned and BTC minted at the prevailing price of BTC|ETH.
+
+This unique P2C setup allows instant conversion across the synthetic asset universe of the protocol without liquidity issues nor impact on the prices of the underlying assets. This represents a significant simplification for trading execution as there's no need for complex order books and any connectivity to exchanges. All trading happens within the trading protocol independently based on logics defined by smart contracts .
+
+?> Synthetic assets trading within the protocol is executed against smart contracts following a P2C model by minting and burning the corresponding synthetic assets.
+
+## Centralized trading execution
+
+The synthetic trackers are onchain representations of the investors trading strategy. These synthetic trackers are not usual tokens (e.g. ERC20 tokens) and can't be traded outside the protocol as they can be unique for each investor. All trade orders are executed by the protocol on behalf of the investors based on defined trading rules and can't be executed by anyone else. The value of the portfolio can be displayed in the investor wallet by importing the respective smart contract address but can NOT be bought or sold directly.
+
+?> The execution of the trade instructions is performed by the Protocol on behalf of the investors. Investors are not allowed to trade on behalf of the protocol.
+
+## Who absorbs the P&L of the overall investment pool?
+
+The profit and losses (PnL) of the overall investment pool are absorbed by the Collateralized Debt Pool (CDP) Issuers. These are stakeholders that are absorbing the overall risk of the entire Pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the CDP Issuers. See next section for more information.
+
+?> The P&L of the investment pool is absorbed by the CDP issuers
+
+## Price of the synthetic trackers
+
+The prices of the synthetic trackers are determined by blockchain Oracles.
+
+The prices of the all underlying synthetic assets are determined by a decentralized blockchain Oracles. The prices are used to convert assets amongst each others at these prevailing prices. The mark-to-market gains and losses of the investor synthetic tracker is based on the same price feed. The prices are fetched every X seconds and fed to the trading bots. The trading activity within the Protocol have no impact on the prices at which the synthetic assets are traded. These prices are an input to the trading Protocol.
+
+?> Prices are provided by blockchain Oracles and used to define the exchange rate between synthetic assets.
+
+## Synthetic asset universe
+
+The trading universe of the Protocol is defined by the data availability from the blockchain Oracles. The exact universe will evolve over time but it's envisaged to cover initially the following asset classes:
+- Crypto coins: ETH, BTC, DOT, ...
+- Cryp tokens: UNI, AAVE, ...
+- FX: USD, CHF, EUR, GBP, JPY, ...
+- Commodities: XAU, XAG, XPD, ...
+- Stocks: to be defined
+
+?> The synthetic trackers can take exposure against as many asset classes and instruments type as long as a reliable price feed is available. The trading universe will increase over time based on the price availability.
+
+## Monetization of the synthetic trackers back to the investor wallets
+
+When investors want to exit the protocol and monetize the gains or losses of their respective synthetic trackers, they can convert all their synthetic holdings back to ETH independently with a special smart contract functionality. The smart contract will convert all none ETH synthetic exposures back to ETH based on prices from blockchain Oracles automatically. Then it transfers the corresponding amount of collateral back to the investor wallet: e.g. if the investor invested at t=0 100 and now has 110 worth if ETH, the investor will receive back 110 (i.e. a gain of 10). In the other hand if the investor has only 90 worth of ETH, he will receive only 90 out of the 100 he initially transferred to the protocol (i.e. a loss of 10).
+
+## Collaterlized Debt Pool (CDP)
+
+The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any P&L are absorbed by the CPD Issuers. CPD Issuers have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an investor provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
+
+?> CDP Issuers are absorbing the risks of the overall investment pool
+
+## Wallets
+
+Each investor connects to the protocol with a wallet (e.g. Metamask and alike). To start trading, an amount of ETH need to be transfered to the protocol, therefore debiting the investor wallet and crediting the protocol wallet. The amount transfered is represented by a smart contract and tracked for each investor.
+
+?> Investors connect to the protocol with an online wallet: Metamask and alike
+
+## Reference assets
+
+The reference asset is defined as the reference "currency" of the protocol and is used a reference point to calculate the profit and losses of each investor.
+
+It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
+
+> The reference asset of uTradeFi is Ether. The P&L generated are calculated against the reference asset
+
+!> The reference asset is NOT a traditional currency such as USD or EUR but is another crypto: ETH
