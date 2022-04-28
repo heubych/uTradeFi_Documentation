@@ -2,27 +2,27 @@
 
 ## Synthetic tracker
 
-uTradeFi enables investors to create customized synthetic trackers "sTrack". A synthetic tracker is an asset that tracks the value of various underlying assets without the need to buy the underlying assets. The composition of the synthetic trackers reflect the trading activity of the investors. There are as many synthetic trackers as investors as each investor can setup its own asset allocation rule. The pricing of the synthetic trackers is a function of the quantity of the assets it's tracking and the prices of the underlying assets. The content of the synthetic trackers are represented in the blockchain by specific smart contracts. Synthetic trackers are represented by the quantity of underlying assets it's tracking and is a function of the trading history of the investors. The composition of the trackers is dynamic and changes over time based on new trading instructions.
+uTradeFi enables investors to create customized synthetic trackers "sTrack". A synthetic tracker is an asset that tracks the value of various underlying assets without the need to buy the underlying assets. The composition of the synthetic trackers reflect the trading activity of the investors. There are as many synthetic trackers as investors as each investor can setup its own asset allocation rule. The pricing of the synthetic trackers is a function of the quantity of the assets it's tracking and the prices of the underlying assets. The content of the synthetic trackers are represented in the blockchain by specific smart contracts. The composition of the trackers is dynamic and changes over time based on new trading instructions.
 
 Investors customize the composition of their synthetic tracker by setting up trading rules via "smart trading" functionalities the protocol offers. The valuation of the synthetic tracker is performed by blockchain Oracles  that independently provide pricing feeds to the protocol.  
 
 The individual performance of each synthetic tracker is realized by the investor via an advanced collateralization mechanisms whereby the losses are covered by the collateral posted by the investor itself and the gains by the Collateralized Debt Pool issuers.
 
-?> Synthetic trackers are onchain representation of exposures across multiple assets and unique to each investor.
+?> Synthetic trackers are onchain representation of exposures across multiple assets. Each synthetic tracker is uniquly reflecting each investor trading strategy.
 
 ## Peer-to-Contract trading
 
-uTradeFi is based on synthetic exposures and doesn't require connectivity to Decentralized exchanges (DeX) or Centralized exchanges (CeX). All trades are executed against smart contracts, commonly known as peer-to-contract trading (P2C). Synthetic exposures are minted and burned accordingly to the trading activity in the pool. When an investor converts a synthetic asset into another one (e.g. convert ETH into BTC), a corresponding amount of ETH is burned and BTC minted at the prevailing price of BTC|ETH.
+uTradeFi is based on synthetic exposures and doesn't require connectivity to Decentralized exchanges (DeX) or Centralized exchanges (CeX). All trades are executed against smart contracts, commonly known as peer-to-contract trading (P2C). The exposures of each synthetic trackers are minted and burned accordingly to the trading activity of the investors. When an investor ammend the compostion of a tracker (e.g. convert ETH into BTC), the composition of the tracker is ammended accordingly at the prevailing price of BTC|ETH.
 
 This unique P2C setup allows instant conversion across the synthetic asset universe of the protocol without liquidity issues nor impact on the prices of the underlying assets. This represents a significant simplification for trading execution as there's no need for complex order books and any connectivity to exchanges. All trading happens within the trading protocol independently based on logics defined by smart contracts .
 
-?> Synthetic assets trading within the protocol is executed against smart contracts following a P2C model by minting and burning the corresponding synthetic assets.
+?> Trading in the protocol is executed against smart contracts following a P2C model by minting and burning the corresponding composition of the syntetic trackers.
 
 ## Centralized trading execution
 
-The synthetic trackers are onchain representations of the investors trading strategy. These synthetic trackers are not usual tokens (e.g. ERC20 tokens) and can't be traded outside the protocol as they can be unique for each investor. All trade orders are executed by the protocol on behalf of the investors based on defined trading rules and can't be executed by anyone else. The value of the portfolio can be displayed in the investor wallet by importing the respective smart contract address but can NOT be bought or sold directly.
+The synthetic trackers are onchain representations of the investors trading strategy. These synthetic trackers are not usual tokens (e.g. ERC20 tokens) and can't be traded outside the protocol as they can be unique for each investor. All trade orders are executed by the protocol on behalf of the investors based on defined trading rules and can't be executed by anyone else. The value of the syntetic trackets could be theoretically displayed in the investor wallet by importing the respective smart contract address but can NOT be bought, sold or transfer directly.
 
-?> The execution of the trade instructions is performed by the Protocol on behalf of the investors. Investors are not allowed to trade on behalf of the protocol.
+?> The execution of the trade instructions is performed by the Protocol on behalf of the investors to allow trading bots to run automatically 24/7 without manual approval
 
 ## Who absorbs the P&L of the overall investment pool?
 
