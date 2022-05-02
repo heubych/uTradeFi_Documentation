@@ -7,6 +7,6 @@
 
 * [Key Concepts](keyconcepts.md "Explanantion of key concepts")
 * [Invesmtent Process](investmentprocess.md "Overview of how to invvest")
-* [Smart Contracts](smartcontracts.md "Overview of the smart contracts")
 * [Risks](risk.md "Overview of key risks")
+* [Smart Contracts](smartcontracts.md "Overview of the smart contracts")
 * [Formatting](guide.md)
