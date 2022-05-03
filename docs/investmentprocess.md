@@ -12,7 +12,7 @@ To start the journey, investment capital need to be transferred to the protocol.
 
 ## Step 2: Define the asset allocation of the synthetic trackers
 
-The asset allocation of the synthetic tracker can be changed by converting the orginal investment capital into another asset or asset class: e.g. convert from ETH to BTC. This is done via specific menus in the App. The convertion from an asset to another one is done in real time at the previaling prices provided by oracle blockchains. There are no bid/ask spreads nor real buy/sell via exchanges. The trades are executred on a peer-to-contract model.
+The asset allocation of the synthetic tracker can be changed by converting the original investment capital into another asset or asset class: e.g. convert from ETH to BTC. This is done via specific menus in the App. The conversion from an asset to another one is done in real time at the prevailing prices provided by oracle blockchains. There are no bid/ask spreads nor real buy/sell via exchanges. The trades are executed on a peer-to-contract model.
 
 The simplest form of trade are "Simple trade" with an immediate execution. These trades are executed directly after the capture and don't rely on triggers to be executed
 * Buy/sell now
@@ -22,7 +22,7 @@ The simplest form of trade are "Simple trade" with an immediate execution. These
 
 ## Step 3: Implement smart trading logics
 
-Various smart trading rules can be easily set up. The smart trading rules will be run automatically by the trading bots when pre-defined triggers are hit. These trading logics allow the investors to have conditional buys or sell based on agreed triggers. These advanced functionalities are not mandatory and can be skipped if investors prefer to execute all trades by themself. The advanced trades are:
+Smart trading rules can be easily set up. The smart trading rules will be run automatically by the trading bots when pre-defined triggers are hit. These trading logics allow the investors to have conditional buys or sell based on agreed triggers. These advanced functionalities are not mandatory and can be skipped if investors prefer to execute all trades by themself. The advanced trades are:
 
 Advanced trade: trigger based
 * Buy now with profit taking and stop loss triggers

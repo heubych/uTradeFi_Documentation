@@ -61,16 +61,12 @@ The value of overall investment pool is a function of the net total supply of ea
 
 ## Wallets
 
-Each investor connects to the protocol with a wallet (e.g. Metamask and alike). To start trading, an amount of ETH need to be transfered to the protocol, therefore debiting the investor wallet and crediting the protocol wallet. The amount transfered is represented by a smart contract and tracked for each investor.
+Each investor connect his wallet to the protocol (e.g. Metamask and alike). To start trading, an amount of ETH need to be transfered to the protocol, therefore debiting the investor wallet and crediting the protocol wallet. The amount transfered is represented by a smart contract and tracked for each investor.
 
 ?> Investors connect to the protocol with an online wallet: Metamask and alike
 
 ## Reference assets
 
-The reference asset is defined as the reference "currency" of the protocol and is used a reference point to calculate the profit and losses of each investor.
+The reference asset is defined as the reference "currency" of the protocol and is used a reference point to calculate the profit and losses of each investor. It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
 
-It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
-
-> The reference asset of uTradeFi is Ether. The P&L generated are calculated against the reference asset
-
-!> The reference asset is NOT a traditional currency such as USD or EUR but is another crypto: ETH
+?> The reference asset of uTradeFi is Ether. The P&L generated are calculated against the reference asset

@@ -21,7 +21,7 @@ Funding providers are exposed to the overall investment risk of the pool
 
 ## Smart contract risk
 
-The logics defining uTradeFi are implemented as smart contract on the blockchain. Smart contract risks are risks that are the consequence of unknown bugs in the smart contracts. To mitigate these risks, various actions were performed:
+The logics defining uTradeFi are implemented as smart contract on the blockchain. Smart contract risks are risks that are the consequence of unknown bugs in the smart contracts. To mitigate these risks, various actions will be performed:
 * extensive testing of the protocol and its smart contracts
 * independent review of the smart contracts by an audit firm
 * publish the code of the smart contracts on github
@@ -35,6 +35,6 @@ Regulatory risk is the risk that a change in regulations or laws will materially
 
 If regulators were to ban such protocols, the synthetic trackers would be simply converted back to ETH and the investment capital transferred back to the investors wallets (adjusted by the gain and losses of the investment strategies obviously). Therefore there's no real risk as the funds would be transferred immediately back the investors.
 
-## Lack of pool Issuers
+## Lack of pool CDP Issuers
 
 Lack of available funding would result in no capacity for trading. If at any point in time a lack of funding providers is detected.... what would we do???
