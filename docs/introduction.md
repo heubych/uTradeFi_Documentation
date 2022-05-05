@@ -22,19 +22,19 @@ It's addressed to all investors who want to make money by setting up winning tra
 
 > uTradeFi is addressed to all investors capable of creating profits with smart investment strategies
 
-## How do I create my sTrack?
+## What are synthetic trackers or sTrack?
+
+sTrack is the **symbol** for the synthetic trackers created by protocol. Each tracker is unique as it's customized to the investor trading strategy. Therefore sTrack is a non-tradable asset that can't be transferred or traded outside uTradeFi. sTrack are "non-fungible non-tradable" assets. Each synthetic tracker can be redeemed in their ETH equivalent value. There are no limitation for the monetization of the synthetic trackers and is allowed 24/7.
+
+> sTrack are non-fungible non-tradable synthetic trackers
+
+## How do I create my own sTrack?
 
 Synthetic trackers or **sTrack** are created as soon as investors bring their investment capital to the protocol. Once the investment capital is transferred to the protocol, a unique sTrack is created with a default asset allocation. The investors can then amend the synthetic tracker to reflect their own trading strategies.
 
 Ether is the only currency accepted by the protocol as investment capital. ETH is defined as the reference asset to calculate the profit and losses of each synthetic tracker. All mark-to-market gains and losses of the synthetic trackers are cleared in the reference asset currency.
 
 > Bring Ether to the protocol and start defining the asset allocation of the synthetic tracker
-
-## What is sTrack?
-
-sTrack is the **symbol** for the synthetic trackers created by protocol. Each tracker is unique as it's customized to the investor trading strategy. Therefore sTrack is a non-tradable assets that can't be transferred or traded outside uTradeFi. This is technically referred to "non-fungible non-tradable synthetic trackers". Each synthetic tracker can be redeemed in their ETH equivalent value. There are no limitation for the monetization of the synthetic trackers and is allowed 24/7.
-
-> sTrack are non-fungible non-tradable synthetic trackers
 
 ## How do I make money?
 
@@ -60,4 +60,8 @@ The fees collected are distributed to the CDP issuers which assume the overall r
 
 Investment risk, i.e. the risk to lose money with bad investment decisions, is the main risk of using the protocol.
 
-Volume risk, i.e. the lack of CDP issuers is also a risk
+## How much gains and losses are covered by the protocol logic?
+
+The protocol allows each sTrack to lose 80% of their value before being automatically liquidated (if no actions are taken by the investors). The automatic liquidation is executed with smart contracts and the remaining investment capital freed up.
+
+The protocol guarantee an increase of 80% of the overall investment pool size if no specific actions are taken by the funding providers. This means that if all the pool was invested in non-Ether assets, the protocol would guarantee a performance of 80% above Ether before liquidating the position of the funding providers and investors.

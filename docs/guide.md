@@ -1,5 +1,25 @@
 # Guide
 
+Not: Collateralized Debt Pool Issuers
+
+Pool performance guarantor
+
+Not: Funding providers
+
+Investment pool counterparty guarantor
+
+Investment pool performance guarantor
+
+(Investment) pool performance underwriter
+
+Pool sponsor
+
+Net investment performance backer
+
+warrantor, guarantee, underwriter, voucher, sponsor, supporter, backer
+
+
+
 # Themes
 
 https://jhildenbiddle.github.io/docsify-themeable/#/

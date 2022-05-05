@@ -9,7 +9,7 @@ Investing has never been easier!
 
 ## Abstract
 
->uTradeFi is a decentralized protocol allowing investors to create **synthetic trackers** or **sTrack** across multiple asset classes. It's based on a peer-to-contract trading model where synthetic trackers are minted and burned accordingly to the investors trading activity. Investors define their trading rules by setting up **smart trading logics** that are executed automatically according to the instructions. Investors have to provide to the protocol investment capital to create customized synthetic trackers. The gains and losses of the protocol are shared amongst investors (e.g. between the one making money and the one losing money) and with Collateralized Debt Pool issuers which are responsible for the overall performance of the investment pool (e.g. if all investors make money).
+>uTradeFi is a decentralized protocol allowing investors to create **synthetic trackers** or **sTrack** across multiple asset classes. It's based on a peer-to-contract trading model where synthetic trackers are minted and burned accordingly to the investors trading activity. Investors define their trading rules by setting up **smart trading logics** that are executed automatically according to the instructions. Investors have to provide to the protocol investment capital to create customized synthetic trackers. The gains and losses of the protocol are shared amongst investors (e.g. between the one making money and the one losing money) and the overall net performance with Collateralized Debt Pool issuers which are responsible for the overall performance of the investment pool (e.g. if all investors make money).
 
 ## Version
 
@@ -19,4 +19,4 @@ uTradeFi is based on a proprietary concept being developed by Christian Heuby
 
 Contact: christian.heuby@gmail.com
 
-Website release: v1.0.3
+Website release: v1.0.4
