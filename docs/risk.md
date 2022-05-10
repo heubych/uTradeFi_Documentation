@@ -3,11 +3,11 @@
 
 ## Is it risky to use uTradeFi?
 
-The sections below contain some of the key risks that users of the protocol face. Most of these risks are common with other Defi protocols. Some are specific to uTradeFi (e.g. market risk of the trackers). Please read carefully and make sure you understand those before investing.
+The sections below contain some of the key risks that users of the protocol face. Most of these risks are common to other DeFi protocols. Some are specific to uTradeFi (e.g. market risk of the trackers). Please read carefully and make sure you understand those before investing.
 
 ## Market risk
 
-Market risk refers to the possibility that participants of the protocol will experience losses due to factors that affect the overall performance of their synthetic trackers.
+Market risk refers to the possibility that participants of the protocol will experience losses due to factors that affect the overall performance of the synthetic trackers.
 
 ### Market risk of the synthetic trackers
 
@@ -15,29 +15,29 @@ The protocol empowers investors to make money based on synthetic trackers and sm
 
 !> Investors will lose money if bad investments decisions are made (e.g. wrong timing, investment in under-performing assets)
 
-### Market risk of the overall pool for the CDP Issuers
+### Market risk of the overall pool for the underwriters
 
-Funding providers are exposed to the overall pool performance. Loses arise when the value of the overall pool increase (denominated in the reference asset, i.e. Ether) as a consequence of successful investment strategies. In a scenario where all investors beats the reference asset performance (Ether), the value of the pool would increase and CDP issuers would suffer a loss.
+Underwriters are exposed to the overall pool performance. Loses arise when the value of the overall pool increases (denominated in the reference asset, i.e. Ether) as a consequence of successful investors investment strategies. In a scenario where all investors beats the reference asset performance (Ether), the value of the pool would increase and underwriters would suffer a loss.
 
-!> Funding providers are exposed to the overall pool performance. When the overall pool grows due to the increase of the prices of the synthetic assets, funding providers will suffer a loss.
+!> Underwriters are exposed to the overall pool performance. When the overall pool grows due to the increase of the prices of the synthetic assets, underwriters will suffer losses.
 
 ### Safe-guard: Automatic liquidation of losing synthetic trackers
 
-Loss making synthetic trackers are automatically liquidated by the protocol once 80% of the invested capital is gone. The automatic liquidation of the losing synthetic trackers cap the amount of loss investors might experience. Therefore investors should never be in a position where they lost more than the invested capital.
+Loss making synthetic trackers are automatically converted back to Ether once 80% of the invested capital is gone. The automatic conversion of the losing synthetic trackers cap the amount of loss investors might experience. Therefore investors should never be in a position where they lost more than the invested capital.
 
 !> Synthetic trackers are automatically liquidated if 80% of the invested capital is lost
 
 ### Safe-guard: Close-out risk
 
-Synthetic trackers are liquidated once 80% of their value is lost. A 20% buffer is available for close-out risk as prices might be very volatile when the synthetic trackers are burned.
+Synthetic trackers are converted to Ether once 80% of their value is lost. A 20% buffer is available for close-out risk as prices might be very volatile when the synthetic trackers are converted back to Ether.
 
 !> A 20% buffer is available for close-out risk to ensure that investors don't lose more than their invested capital
 
-### Safe-guard: Automatic liquidation of CDP issuer positions
+### Safe-guard: Automatic liquidation of underwriters positions
 
-Funding providers positions are automatically liquidated once 80% of the provided funding is consumed. The key risk of loses arise from an increase in value of the overall pool (denominated in the reference asset, i.e. Ether) as a consequence of successful investment strategies. This is a safe-guard to ensure the stability of the protocol and make sure that the net gains of all investors are paid accordingly.
+Underwriters positions are automatically liquidated once 80% of the provided funding is consumed. The key risk of loses arise from an increase in value of the overall pool (denominated in the reference asset, i.e. Ether) as a consequence of successful investment strategies. This is a safe-guard to ensure the stability of the protocol and make sure that the net gains of all investors are paid accordingly.
 
-!> Funding provider positions are automatically liquidated (if no action taken) once 80% of their position is lost
+!> Underwriters positions are automatically liquidated (if no action taken) once 80% of their position is lost
 
 ## Smart contract risk
 
@@ -60,10 +60,10 @@ Volume refers in that context to the amount of invested capital investors have p
 
 ### Volume risk: lack of Investors
 
-If investors are exiting the protocol, the investment pool would shrink accordingly and the amount of debt the funding providers would be responsible would also decrease. Therefore there are no risk in that scenario and all the gains and loses could be paid, just on a smaller pool. In an extreme scenario where all investors would be exiting the protocol, all synthetic trackers would have been liquidated and the funding providers not needed anymore. Therefore the lack of investors doesn't represent a real risk.
+If existing investors are exiting the protocol, the investment pool would shrink accordingly and the amount of debt the underwriters would be responsible would also decrease. Therefore there are no risk in that scenario and all the gains and loses could be paid, just on a smaller pool. In an extreme scenario where all investors would be exiting the protocol, all synthetic trackers would have been liquidated and the performance underwriters not needed anymore. Therefore the lack of investors doesn't represent a real risk.
 
-### Volume risk: Lack of pool CDP Issuers
+### Volume risk: Lack of performance underwriters
 
-The protocol requires funding providers to guarantee the overall investment pool performance. If there are more investors than CDP issuers capacity, the clearing of the gain and losses is problematic and actions need to be taken to guarantee the stability of the protocol.
+The protocol requires performance underwriters to guarantee the overall investment pool performance. If there are more investors than underwriter capacity, the clearing of the gain and losses is problematic and actions need to be taken to guarantee the stability of the protocol.
 
-If funding providers are exiting the system while investors are 100% using the pool capacity, this would result in issues as the exposure of the investors would need to be reduced proportionally. In an extreme situation where all funding providers are exiting the protocol, the full liquidation of all sTrack would be required.
+If underwiters are exiting the system while investors are 100% using the pool capacity, this would result in issues as the exposure of the investors would need to be reduced proportionally. In an extreme situation where all peformance underwriters are exiting the protocol, the full liquidation of all sTrack would be required.

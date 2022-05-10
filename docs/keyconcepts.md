@@ -6,7 +6,7 @@ uTradeFi enables investors to create customized synthetic trackers "sTrack". A s
 
 Investors customize the composition of their synthetic tracker by setting up trading rules via "smart trading" functionalities the protocol offers. The valuation of the synthetic tracker is performed by blockchain Oracles  that independently provide pricing feeds to the protocol.  
 
-The individual performance of each synthetic tracker is realized by the investor via an advanced collateralization mechanisms whereby the losses are covered by the collateral posted by the investor itself and the gains by the Collateralized Debt Pool issuers.
+The individual performance of each synthetic tracker is assumed by the investor via a collateralization mechanisms. The overall pool performance is assumed by underwriters.
 
 ?> Synthetic trackers are onchain representation of exposures across multiple assets. Each synthetic tracker is uniquly reflecting each investor trading strategy.
 
@@ -24,11 +24,11 @@ The synthetic trackers are onchain representations of the investors trading stra
 
 ?> The execution of the trade instructions is performed by the Protocol on behalf of the investors to allow trading bots to run automatically 24/7 without manual approval
 
-## Who absorbs the P&L of the overall investment pool?
+## Who absorbs the P&L of the overall pool?
 
-The profit and losses (PnL) of the overall investment pool are absorbed by the Collateralized Debt Pool (CDP) Issuers. These are stakeholders that are absorbing the overall risk of the entire Pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the CDP Issuers. See next section for more information.
+The gains and losses of the overall investment pool are absorbed by the underwriters of the pool performance. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
 
-?> The P&L of the investment pool is absorbed by the CDP issuers
+?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
 
 ## Price of the synthetic trackers
 
@@ -53,20 +53,20 @@ The trading universe of the Protocol is defined by the data availability from th
 
 When investors want to exit the protocol and monetize the gains or losses of their respective synthetic trackers, they can convert all their synthetic holdings back to ETH independently with a special smart contract functionality. The smart contract will convert all none ETH synthetic exposures back to ETH based on prices from blockchain Oracles automatically. Then it transfers the corresponding amount of collateral back to the investor wallet: e.g. if the investor invested at t=0 100 and now has 110 worth if ETH, the investor will receive back 110 (i.e. a gain of 10). In the other hand if the investor has only 90 worth of ETH, he will receive only 90 out of the 100 he initially transferred to the protocol (i.e. a loss of 10).
 
-## Collaterlized Debt Pool (CDP)
+## Pool performance underwriters
 
-The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any P&L are absorbed by the CPD Issuers. CPD Issuers have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an investor provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
+The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any gains and losses are absorbed by the pool performance underwriters. The underwriters have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an underwriter provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
 
-?> CDP Issuers are absorbing the risks of the overall investment pool
+?> underwriters are absorbing the risks of the overall investment pool
 
 ## Wallets
 
-Each investor connect his wallet to the protocol (e.g. Metamask and alike). To start trading, an amount of ETH need to be transfered to the protocol, therefore debiting the investor wallet and crediting the protocol wallet. The amount transfered is represented by a smart contract and tracked for each investor.
+Investors need to own a digital wallet to interact with the protocol. Investors need to connect his wallet to the protocol (e.g. Metamask and alike) and transfer ETH to the protocol. This will result to a debit of the investor wallet and a credit of the protocol wallet. The amount transfered is represented by a smart contract and tracked for each investor.
 
-?> Investors connect to the protocol with an online wallet: Metamask and alike
+?> Investors connect to the protocol with classic digital wallets: Metamask and alike
 
 ## Reference assets
 
-The reference asset is defined as the reference "currency" of the protocol and is used a reference point to calculate the profit and losses of each investor. It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
+The reference asset is defined as the reference "currency" of the protocol and is used as reference to calculate the profit and losses of each investor. It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
 
-?> The reference asset of uTradeFi is Ether. The P&L generated are calculated against the reference asset
+?> The reference asset of uTradeFi is Ether. The gains and losses are calculated against the reference asset
