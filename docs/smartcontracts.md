@@ -1,6 +1,13 @@
 # Overview
 
-The protocol is based on a set of smart contracts that define exactly the rules of the trading protocol
+The protocol is based on a set of smart contracts that define exactly the rules of the trading protocol.
+
+Content to be written!
+
+
+## Addresses
+
+Overview of the smart contract addresses
 
 ## sTrack
 

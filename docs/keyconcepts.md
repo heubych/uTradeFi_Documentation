@@ -30,6 +30,12 @@ The gains and losses of the overall investment pool are absorbed by the underwri
 
 ?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
 
+## Pool capacity
+
+The pool capacity represents the ratio between investors and pool performance underwriters. The clearing of the gains and loses require an adequate amount of pool performance underwriters. Therefore new investors can invest only when pool performance underwriters are available to absorb the potential increased performance risk. The capacity measures the ratio between investors and underwriters and is targeted at 90%. New investors need to wait once that threshold is reached and will be able to invest if other investors leave the protocol or new underwriters join the protocol.
+
+?> The pool capacity is at maximum 90%. If more capacity is required, additional pool performance underwriters are required (or other investors to leave the protocol)
+
 ## Price of the synthetic trackers
 
 The prices of the synthetic trackers are determined by blockchain Oracles.
@@ -55,7 +61,7 @@ When investors want to exit the protocol and monetize the gains or losses of the
 
 ## Pool performance underwriters
 
-The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any gains and losses are absorbed by the pool performance underwriters. The underwriters have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an underwriter provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
+The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any net gains and losses are absorbed by the pool performance underwriters. The underwriters have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an underwriter provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
 
 ?> underwriters are absorbing the risks of the overall investment pool
 
