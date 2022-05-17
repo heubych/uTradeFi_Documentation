@@ -20,4 +20,4 @@ uTradeFi is based on a proprietary concept being developed by Christian Heuby
 
 Contact: christian.heuby@gmail.com
 
-Website release: v1.0.6
+Website release: v1.0.7
