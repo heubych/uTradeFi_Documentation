@@ -68,4 +68,4 @@ The protocol guarantees an increase of 80% (tbc) of the overall investment pool 
 
 The main risk is market risk, i.e. the risk to lose money with bad investment decisions. Please read carefully the section on "Risks".
 
-?> The unique design of uTradeFi with collateralized investors loses and collateralized pool performance underwriters loses allow the clearing of the gains and loses of the system in all circumstances. 
+?> The unique design of uTradeFi with collateralized investors losses and collateralized pool performance underwriters losses allow the clearing of the gains and losses of the system in all circumstances.

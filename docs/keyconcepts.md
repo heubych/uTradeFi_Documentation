@@ -32,7 +32,7 @@ The gains and losses of the overall investment pool are absorbed by the underwri
 
 ## Pool capacity
 
-The pool capacity represents the ratio between investors and pool performance underwriters. The clearing of the gains and loses require an adequate amount of pool performance underwriters. Therefore new investors can invest only when pool performance underwriters are available to absorb the potential increased performance risk. The capacity measures the ratio between investors and underwriters and is targeted at 90%. New investors need to wait once that threshold is reached and will be able to invest if other investors leave the protocol or new underwriters join the protocol.
+The pool capacity represents the ratio between investors and pool performance underwriters. The clearing of the gains and losses require an adequate amount of pool performance underwriters. Therefore new investors can invest only when pool performance underwriters are available to absorb the potential increased performance risk. The capacity measures the ratio between investors and underwriters and is targeted at 90%. New investors need to wait once that threshold is reached and will be able to invest if other investors leave the protocol or new underwriters join the protocol.
 
 ?> The pool capacity is at maximum 90%. If more capacity is required, additional pool performance underwriters are required (or other investors to leave the protocol)
 
