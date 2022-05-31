@@ -9,5 +9,4 @@
 * [Risks](risk.md "Overview of key risks")
 * [uTradeFi Screenshots](Screenshots.md "Sreenshots of uTradeFi")
 * [Architecture](architecture.md "System overview")
-* [Smart Contracts](smartcontracts.md "Overview of the smart contracts")
-* [Formatting](guide.md)
+* [Smart Contracts]

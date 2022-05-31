@@ -1,20 +1,4 @@
-# Guide
-
-
-Investment pool counterparty guarantor
-
-Investment pool performance guarantor
-
-(Investment) pool performance underwriter
-
-Net investment performance backer
-
-warrantor, guarantee, underwriter, voucher, sponsor, supporter, backer
-
-
-image with 2 actors?
-
-# Themes
+# Formatting Themes
 
 https://jhildenbiddle.github.io/docsify-themeable/#/
 
@@ -29,8 +13,6 @@ https://jhildenbiddle.github.io/docsify-themeable/#/
 my code
 
 ## another sub maxLevel
-
-blabla
 
 **Time** is money, my friend!
 
