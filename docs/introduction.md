@@ -32,11 +32,11 @@ Ether is the only currency accepted by the protocol as investment capital. ETH i
 
 > Bring Ether to the protocol and start defining the asset allocation of the synthetic tracker
 
-## How do I make money?
+## How do I make money as an investor?
 
 Each investor will then amend the composition of his synthetic tracker by deploying the investment capital to other asset types which will hopefully **outperform the reference asset** (e.g. convert ETH to BTC). If the value of the tracker is above the amount of trading capital transferred, a gain was generated and the investor is in a position to capitalize that gain by redeeming the tracker to unlock it's trading capital and corresponding gains.
 
-## Can I sell my sTrack to someone else?
+## Are sTrack tradable outside the protocol?
 
 No, synthetic trackers or sTrack are **locked in the protocol** and can't be traded outside. However they can be liquidated at any time by converting the underlying assets into their ETH equivalent price and the initial investment capital freed up accordingly. The burning of the sTrack is executed by the investors with the investment capital automatically transferred back. This gives the investors the capability to exit the system at any time and have their funds back (adjusted with the potential gain and losses of their past investments).
 
@@ -50,9 +50,17 @@ Therefore it's addressed to all **investors** who want to make money by setting 
 
 > uTradeFi is addressed to all investors capable of creating profits with smart investment strategies
 
-It's also addressed to **pool performance underwriters** that want to earn fees by assuming the overall performance of the pool. These fees are collected from the investors (trading fees and performance fees) and redistributed as a reward to assume the net pool performance risk.
+For the **pool performance underwriters** there are two different business models that can be envisaged.
 
-> uTradeFi is also addressed to all underwriters that want to earn fees while being exposed to the net performance of the synthetic tracker pool
+Option 1: Financial institutions - **private protocol**
+
+uTradeFi is a great solutions for financial institutions who want to offer a new type of investment opportunities into digital assets to its client base. A financial institution can play the role of the pool performance underwriter and hedge the aggregated exposure of the investors synthetic trackers and collect transactional fees from the protocol. The solution can work on public or private blockchains based on the preference of the institution.
+
+Option 2: Pure DeFi - **public protocol**
+
+uTradeFi could also work on a fully DeFi basis where the pool performance underwriters are simple "individuals" who want to earn fees by assuming the overall performance of the pool. These fees are collected from the investors (trading fees and performance fees) and redistributed as a reward to assume the net pool performance risk. However the protocol would be a bit more risky as it relies on enough pool performance underwriter capacity. Therefore the DeFi model is not favoured at the moment and the focus is on Option 1.
+
+> uTradeFi is also addressed to all pool performance underwriters (financial institutions or private based on options above) that want to earn fees while being exposed to the net performance of the synthetic tracker pool.
 
 ## How much does it costs?
 
