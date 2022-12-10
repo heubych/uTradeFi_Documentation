@@ -12,7 +12,7 @@ uTradeFi is a "closed" system where gains of some actors and absorbed by losses 
 
 ## What is unique to uTradeFi?
 
-It's based on a peer-to-contract trading model where synthetic trackers are minted and burned accordingly to the investors trading activity, without buying, minting or holding the underlying assets. **sTrack** are onchain representation of the underlying basket it's tracking, including its composition and exposure. The creation of the synthetic trackers is insured by smart contracts on the blockchain.
+It's based on a peer-to-contract trading model where synthetic trackers are minted and burned accordingly to the investors trading activity, without buying, minting or holding the underlying assets. **sTrack** are onchain representation of the underlying basket it's tracking, including its composition and exposure being tracked. The creation of the synthetic trackers is insured by smart contracts on the blockchain.
 
 > sTrack are onchain representation of the basket it's tracking: symbols and exposures
 
@@ -72,7 +72,9 @@ The fees collected are distributed to the pool performance underwriters which as
 
 ## How much gains and losses are covered by the protocol logic?
 
-The protocol allows each sTrack to lose 80% (tbc) of its value before being automatically converted back into the reference asset, ie Ether (if no actions are taken by the investors). The automatic conversion into the reference asset (Ether) is executed with smart contracts to mitigate future losses.
+The protocol allows each sTrack to lose 80% of its value before being automatically converted back into the reference asset, ie Ether (if no actions are taken by the investors). The automatic conversion into the reference asset (Ether) is executed with smart contracts to mitigate future losses.
+
+(to be defined)
 
 The protocol guarantees an increase of 80% (tbc) of the overall investment pool size if no specific actions are taken by the pool performance underwriters. This means that if all the pool was invested in non-Ether assets, the protocol would guarantee a performance of 80% above Ether before liquidating the position of the underwriters and investors.
 
