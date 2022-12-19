@@ -10,35 +10,9 @@ The individual performance of each synthetic tracker is assumed by the investor 
 
 ?> Synthetic trackers are onchain representation of exposures across multiple assets. Each synthetic tracker is uniquely reflecting each investor trading strategy.
 
-## Peer-to-Contract trading
-
-uTradeFi is based on synthetic exposures and doesn't require connectivity to Decentralized exchanges (DeX) or Centralized exchanges (CeX). All trades are executed against smart contracts, commonly known as peer-to-contract trading (P2C). The exposures of each synthetic trackers are minted and burned accordingly to the trading activity of the investors. When an investor amend the composition of a tracker (e.g. convert ETH into BTC), the composition of the tracker is amended accordingly at the prevailing price of BTC|ETH.
-
-This unique P2C setup allows instant conversion across the synthetic asset universe of the protocol without liquidity issues nor impact on the prices of the underlying assets. This represents a significant simplification for trading execution as there's no need for complex order books and any connectivity to exchanges. All trading happens within the trading protocol independently based on logics defined by smart contracts.
-
-?> Trading in the protocol is executed against smart contracts following a P2C model by minting and burning the corresponding composition of the synthetic trackers.
-
-## Centralized trading execution
-
-The synthetic trackers are onchain representations of the investors trading strategy. These synthetic trackers are not usual tokens (e.g. ERC20 tokens) and can't be traded outside the protocol as they can be unique for each investor. All trade orders are executed by the protocol on behalf of the investors based on defined trading rules and can't be executed by anyone else.
-
-?> The execution of the trade instructions is performed by the protocol on behalf of the investors to allow trading bots to run automatically 24/7 without manual intervention
-
-## Who absorbs the P&L of the overall pool?
-
-The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
-
-?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
-
-## Pool capacity
-
-The pool capacity represents the ratio between investors and pool performance underwriters. The clearing of the gains and losses require an adequate amount of pool performance underwriters. Therefore new investors can invest only when pool performance underwriters are available to absorb the potential increased performance risk. The capacity measures the ratio between investors and underwriters and is targeted at 90%. New investors need to wait once that threshold is reached and will be able to invest if other investors leave the protocol or new underwriters join the protocol.
-
-?> The pool capacity is at maximum 90%. If more capacity is required, additional pool performance underwriters are required (or other investors to leave the protocol)
-
 ## Price of the synthetic trackers
 
-The prices of the synthetic trackers are determined by blockchain Oracles (tbc).
+The prices of the synthetic trackers are determined by blockchain Oracles (tbc) or feeds provided by the platform provider.
 
 The prices of the underlying assets are determined by a decentralized blockchain Oracles. The prices are used to convert assets amongst each others at these prevailing prices. The mark-to-market gains and losses of the investor synthetic tracker is based on the same price feed. The prices are fetched every X second and fed to the trading bots. The trading activity within the Protocol have no impact on the prices at which the synthetic assets are traded. These prices are an input to the trading Protocol.
 
@@ -58,6 +32,26 @@ The trading universe of the Protocol is defined by the data availability from th
 ## Monetization of the synthetic trackers back to the investor wallets
 
 When investors want to exit the protocol and monetize the gains or losses of their respective synthetic trackers, they can convert all their synthetic holdings back to ETH independently with a special smart contract functionality. The smart contract will convert all none-ETH synthetic exposures back to ETH based on prices from blockchain Oracles automatically. Then it transfers the corresponding amount of collateral back to the investor wallet: e.g. if the investor invested at t=0 100 and now has 110 worth if ETH, the investor will receive back 110 (i.e. a gain of 10). In the other hand if the investor has only 90 worth of ETH, he will receive only 90 out of the 100 he initially transferred to the protocol (i.e. a loss of 10).
+
+## Peer-to-Contract trading
+
+uTradeFi is based on synthetic exposures and doesn't require connectivity to Decentralized exchanges (DeX) or Centralized exchanges (CeX). All trades are executed against smart contracts, commonly known as peer-to-contract trading (P2C). The exposures of each synthetic trackers are minted and burned accordingly to the trading activity of the investors. When an investor amend the composition of a tracker (e.g. convert ETH into BTC), the composition of the tracker is amended accordingly at the prevailing price of BTC|ETH.
+
+This unique P2C setup allows instant conversion across the synthetic asset universe of the protocol without liquidity issues nor impact on the prices of the underlying assets. This represents a significant simplification for trading execution as there's no need for complex order books and any connectivity to exchanges. All trading happens within the trading protocol independently based on logics defined by smart contracts.
+
+?> Trading in the protocol is executed against smart contracts following a P2C model by minting and burning the corresponding composition of the synthetic trackers.
+
+## Centralized trading execution
+
+The synthetic trackers are onchain representations of the investors trading strategy. These synthetic trackers are not usual tokens (e.g. ERC20 tokens) and can't be traded outside the protocol as they can be unique for each investor. All trade orders are executed by the protocol on behalf of the investors based on defined trading rules and can't be executed by anyone else.
+
+?> The execution of the trade instructions is performed by the protocol on behalf of the investors to allow trading bots to run automatically 24/7 without manual intervention
+
+## Who absorbs the P&L of the overall pool?
+
+The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
+
+?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
 
 ## Pool performance underwriters
 

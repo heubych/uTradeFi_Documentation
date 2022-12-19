@@ -1,0 +1,37 @@
+Option 2: Pure DeFi - **public protocol**
+
+uTradeFi could also work on a fully DeFi basis where the pool performance underwriters are simple "individuals" who want to earn fees by assuming the overall performance of the pool. These fees are collected from the investors (trading fees and performance fees) and redistributed as a reward to assume the net pool performance risk. However the protocol would be a bit more risky as it relies on enough pool performance underwriter capacity. Therefore the DeFi model is not favoured at the moment and the focus is on Option 1.
+
+## Pool capacity
+
+The pool capacity represents the ratio between investors and pool performance underwriters. The clearing of the gains and losses require an adequate amount of pool performance underwriters. Therefore new investors can invest only when pool performance underwriters are available to absorb the potential increased performance risk. The capacity measures the ratio between investors and underwriters and is targeted at 90%. New investors need to wait once that threshold is reached and will be able to invest if other investors leave the protocol or new underwriters join the protocol.
+
+?> The pool capacity is at maximum 90%. If more capacity is required, additional pool performance underwriters are required (or other investors to leave the protocol)
+
+### Safe-guard: Automatic liquidation of pool performance underwriters positions
+
+... more thinking required ...
+
+Underwriters positions are automatically liquidated once 80% of the provided collateral is consumed. The key risk of losses arise from an increase in value of the overall pool (denominated in the reference asset, i.e. Ether) as a consequence of successful investors investment strategies. This is a safe-guard to ensure the stability of the protocol and make sure that the net gains of all investors are paid accordingly.
+
+?> Underwriters positions are automatically liquidated (if no action taken) once 80% of their collateral is consumed
+
+## Volume risks
+
+Volume risk refers to the mismatch between the required risk capacity for investors versus the amount of capacity of the pool performance underwriters. Imbalances (in term of collateral provided) is problematic.
+
+### Excess of underwriters vs investors
+
+Any excess of underwriters capacity doesn't lead to significant issues. E.g. if existing investors are exiting the protocol (therefore leading to an excess of underwriters capacity), the investment pool would shrink accordingly and the amount of performance the underwriters are responsible for would decrease. Therefore there are no risk in that scenario as all gains and losses would be still 100% collateralized. In an extreme scenario where all investors would be exiting the protocol, no synthetic trackers would be still live and the pool performance underwriters not needed anymore. Therefore a reduction of investors appetite doesn't represent a risk for the system.
+
+!> An excess of underwriters capacity doesn't represent a risk for the protocol. All gains and losses can be cleared between investors and pool performance underwriters
+
+### Excess investors vs underwriters
+
+... more thinking required ...
+
+The protocol requires performance underwriters to guarantee the overall investment pool performance. If there's more investor than underwriter capacity, the clearing of the gains and losses is problematic in a scenario where the overall pool grows (from trading gains) and actions need to be taken to guarantee the stability of the protocol. This would require a proportional decrease of the investor capacity accordingly to the pool performance underwriters. The decrease in investor capacity is handled automatically by smart contracts that guarantee the stability of the protocol.
+
+If underwriters are exiting the system while investors are 100% using the pool capacity, this would result in issues as the exposure of the investors would need to be reduced proportionally. In an extreme situation where all performance underwriters are exiting the protocol, the full liquidation of all sTrack is required.
+
+!> An excess of investors represent a risk...!!! More thinking to be done here!!!

@@ -28,10 +28,8 @@ Smart trading rules can be easily set up. The **smart trading rules** will be ru
 Advanced trade: trigger based
 * Buy now with profit taking and stop loss triggers
 * Sell now with buy back triggers
-* Short now with profit taking and stop loss triggers
 * Deferred buy based on trigger
 * Deferred sell based on trigger
-* Deferred short based on trigger
 
 > "Advanced trades" rely on triggers for conditional future execution
 

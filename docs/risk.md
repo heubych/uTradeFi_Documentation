@@ -1,7 +1,7 @@
 
 # Risk Overview
 
-## Is it risky to use uTradeFi?
+## Introduction
 
 The sections below contain some of the key risks that users of the protocol face. Most of these risks are common to other DeFi protocols. Some are specific to uTradeFi (e.g. market risk of the trackers). Please read carefully and make sure you understand those before investing.
 
@@ -30,34 +30,6 @@ Loss making synthetic trackers are automatically converted back to Ether once 80
 A 20% buffer is available for close-out risk as prices might be very volatile when the synthetic trackers are converted back to Ether.
 
 ?> An implicit 20% buffer is available for close-out risk to ensure that investors don't lose more than their invested capital
-
-### Safe-guard: Automatic liquidation of pool performance underwriters positions
-
-... more thinking required ...
-
-Underwriters positions are automatically liquidated once 80% of the provided collateral is consumed. The key risk of losses arise from an increase in value of the overall pool (denominated in the reference asset, i.e. Ether) as a consequence of successful investors investment strategies. This is a safe-guard to ensure the stability of the protocol and make sure that the net gains of all investors are paid accordingly.
-
-?> Underwriters positions are automatically liquidated (if no action taken) once 80% of their collateral is consumed
-
-## Volume risks
-
-Volume risk refers to the mismatch between the required risk capacity for investors versus the amount of capacity of the pool performance underwriters. Imbalances (in term of collateral provided) is problematic.
-
-### Excess of underwriters vs investors
-
-Any excess of underwriters capacity doesn't lead to significant issues. E.g. if existing investors are exiting the protocol (therefore leading to an excess of underwriters capacity), the investment pool would shrink accordingly and the amount of performance the underwriters are responsible for would decrease. Therefore there are no risk in that scenario as all gains and losses would be still 100% collateralized. In an extreme scenario where all investors would be exiting the protocol, no synthetic trackers would be still live and the pool performance underwriters not needed anymore. Therefore a reduction of investors appetite doesn't represent a risk for the system.
-
-!> An excess of underwriters capacity doesn't represent a risk for the protocol. All gains and losses can be cleared between investors and pool performance underwriters
-
-### Excess investors vs underwriters
-
-... more thinking required ...
-
-The protocol requires performance underwriters to guarantee the overall investment pool performance. If there's more investor than underwriter capacity, the clearing of the gains and losses is problematic in a scenario where the overall pool grows (from trading gains) and actions need to be taken to guarantee the stability of the protocol. This would require a proportional decrease of the investor capacity accordingly to the pool performance underwriters. The decrease in investor capacity is handled automatically by smart contracts that guarantee the stability of the protocol.  
-
-If underwriters are exiting the system while investors are 100% using the pool capacity, this would result in issues as the exposure of the investors would need to be reduced proportionally. In an extreme situation where all performance underwriters are exiting the protocol, the full liquidation of all sTrack is required.
-
-!> An excess of investors represent a risk...!!! More thinking to be done here!!!
 
 ## Smart contract risk
 
