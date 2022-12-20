@@ -4,7 +4,7 @@
 
 uTradeFi enables investors to create customized synthetic trackers "sTrack". A synthetic tracker is an asset that tracks the value of various underlying assets without the need to buy the underlying assets. The composition of the synthetic trackers reflects the trading activity of the investors. There are as many synthetic trackers as investors as each investor can setup its own asset allocation rule. The pricing of the synthetic trackers is a function of the quantity of the assets it's tracking and the prices of the underlying assets. The content of the synthetic trackers is represented in the blockchain by specific smart contracts. The composition of the trackers is dynamic and changes over time based on new trading instructions.
 
-Investors customize the composition of their synthetic tracker by setting up trading rules via "smart trading" functionalities the protocol offers. The valuation of the synthetic tracker is performed by blockchain Oracles (tbc) that independently provide pricing feeds to the protocol.
+Investors customize the composition of their synthetic tracker by setting up trading rules via "smart trading" functionalities the protocol offers. The valuation of the synthetic tracker is performed by blockchain Oracles (tbc) that independently provide pricing feeds to the protocol or feeds from the platform provider.
 
 The individual performance of each synthetic tracker is assumed by the investor via a collateralization mechanism. The overall pool performance is assumed by underwriters.
 
@@ -12,7 +12,7 @@ The individual performance of each synthetic tracker is assumed by the investor 
 
 ## Price of the synthetic trackers
 
-The prices of the synthetic trackers are determined by blockchain Oracles (tbc) or feeds provided by the platform provider.
+The prices of the synthetic trackers are determined by blockchain Oracles (tbc) or data feeds provided directly by the platform provider.
 
 The prices of the underlying assets are determined by a decentralized blockchain Oracles. The prices are used to convert assets amongst each others at these prevailing prices. The mark-to-market gains and losses of the investor synthetic tracker is based on the same price feed. The prices are fetched every X second and fed to the trading bots. The trading activity within the Protocol have no impact on the prices at which the synthetic assets are traded. These prices are an input to the trading Protocol.
 
@@ -20,7 +20,7 @@ The prices of the underlying assets are determined by a decentralized blockchain
 
 ## Synthetic asset universe
 
-The trading universe of the Protocol is defined by the data availability from the blockchain Oracles. The exact universe will evolve over time but it's envisaged to cover initially the following asset classes:
+The trading universe of the Protocol is defined by the data availability. The exact universe will evolve over time but it's envisaged to cover initially the following asset classes:
 - Crypto coins: ETH, BTC, DOT, ...
 - Cryp tokens: UNI, AAVE, ...
 - FX: USD, CHF, EUR, GBP, JPY, ...
@@ -31,7 +31,7 @@ The trading universe of the Protocol is defined by the data availability from th
 
 ## Monetization of the synthetic trackers back to the investor wallets
 
-When investors want to exit the protocol and monetize the gains or losses of their respective synthetic trackers, they can convert all their synthetic holdings back to ETH independently with a special smart contract functionality. The smart contract will convert all none-ETH synthetic exposures back to ETH based on prices from blockchain Oracles automatically. Then it transfers the corresponding amount of collateral back to the investor wallet: e.g. if the investor invested at t=0 100 and now has 110 worth if ETH, the investor will receive back 110 (i.e. a gain of 10). In the other hand if the investor has only 90 worth of ETH, he will receive only 90 out of the 100 he initially transferred to the protocol (i.e. a loss of 10).
+Assuming ETH is the chosen reference asset: When investors want to exit the protocol and monetize the gains or losses of their respective synthetic trackers, they can convert all their synthetic holdings back to ETH independently with a special smart contract functionality. The smart contract will convert all none-ETH synthetic exposures back to ETH based on prices from blockchain Oracles automatically. Then it transfers the corresponding amount of collateral back to the investor wallet: e.g. if the investor invested at t=0 100 and now has 110 worth if ETH, the investor will receive back 110 (i.e. a gain of 10). In the other hand if the investor has only 90 worth of ETH, he will receive only 90 out of the 100 he initially transferred to the protocol (i.e. a loss of 10).
 
 ## Peer-to-Contract trading
 
@@ -49,7 +49,7 @@ The synthetic trackers are onchain representations of the investors trading stra
 
 ## Who absorbs the P&L of the overall pool?
 
-The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees and performance fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
+The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees (tbc and performance fees) paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
 
 ?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
 

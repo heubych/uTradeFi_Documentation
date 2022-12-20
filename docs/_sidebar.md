@@ -3,7 +3,7 @@
 
 * [Home](/)
 
-* [FAQ](overview.md "What is uTradeFi")
+* [FAQ](faq.md "What is uTradeFi")
 * [Key Concepts](keyconcepts.md "Explanantion of key concepts")
 * [Investment Process](investmentprocess.md "Overview of how to invvest")
 * [Risks](risk.md "Overview of key risks")
