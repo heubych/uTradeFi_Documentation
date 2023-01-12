@@ -21,16 +21,6 @@ Pool performance underwriters are exposed to the overall pool performance. Loses
 
 !> Underwriters are exposed to the overall pool performance. When the overall pool grows due to the increase of the prices of the synthetic assets, underwriters will suffer losses.
 
-### Safe-guard: Automatic conversion of synthetic trackers
-
-Loss making synthetic trackers are automatically converted back to Ether once 80% of the invested capital is lost. The automatic conversion of the losing synthetic trackers cap the amount of loss investors might experience. Therefore investors should never be in a position where they lost more than the invested capital.
-
-?> Synthetic trackers are automatically liquidated if 80% of the invested capital is lost
-
-A 20% buffer is available for close-out risk as prices might be very volatile when the synthetic trackers are converted back to Ether.
-
-?> An implicit 20% buffer is available for close-out risk to ensure that investors don't lose more than their invested capital
-
 ## Smart contract risk
 
 The core logics ruling uTradeFi are implemented as smart contract in the blockchain. Smart contract risks are risks that are the consequence of unknown bugs in the smart contracts. To mitigate these risks, various actions will be performed:

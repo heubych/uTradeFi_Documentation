@@ -35,3 +35,14 @@ The protocol requires performance underwriters to guarantee the overall investme
 If underwriters are exiting the system while investors are 100% using the pool capacity, this would result in issues as the exposure of the investors would need to be reduced proportionally. In an extreme situation where all performance underwriters are exiting the protocol, the full liquidation of all sTrack is required.
 
 !> An excess of investors represent a risk...!!! More thinking to be done here!!!
+
+
+### Safe-guard: Automatic conversion of synthetic trackers
+
+Loss making synthetic trackers are automatically converted back to Ether once 80% of the invested capital is lost. The automatic conversion of the losing synthetic trackers cap the amount of loss investors might experience. Therefore investors should never be in a position where they lost more than the invested capital.
+
+?> Synthetic trackers are automatically liquidated if 80% of the invested capital is lost
+
+A 20% buffer is available for close-out risk as prices might be very volatile when the synthetic trackers are converted back to Ether.
+
+?> An implicit 20% buffer is available for close-out risk to ensure that investors don't lose more than their invested capital

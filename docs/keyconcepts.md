@@ -12,11 +12,9 @@ The individual performance of each synthetic tracker is assumed by the investor 
 
 ## Price of the synthetic trackers
 
-The prices of the synthetic trackers are determined by blockchain Oracles (tbc) or data feeds provided directly by the platform provider.
+The value/price of the synthetic trackers and the underlying assets are based on the data feeding strategy defined by the platform provider. Prices can be provided by decentralized blockchain Oracles (decentralized model) or via existing API (centralized model). The prices are used to convert assets amongst each others at these prevailing prices. The mark-to-market gains and losses of the investor synthetic tracker is based on the same price feed. The prices are fetched every X second and fed to the trading bots. The trading activity within the Protocol have no impact on the prices at which the synthetic assets are traded. These prices are an input to the trading Protocol.
 
-The prices of the underlying assets are determined by a decentralized blockchain Oracles. The prices are used to convert assets amongst each others at these prevailing prices. The mark-to-market gains and losses of the investor synthetic tracker is based on the same price feed. The prices are fetched every X second and fed to the trading bots. The trading activity within the Protocol have no impact on the prices at which the synthetic assets are traded. These prices are an input to the trading Protocol.
-
-?> Prices are provided by blockchain Oracles and used to define the exchange rate between synthetic assets.
+?> Prices are in input to the protocol and used to define the exchange rate between synthetic assets.
 
 ## Synthetic asset universe
 
@@ -49,13 +47,13 @@ The synthetic trackers are onchain representations of the investors trading stra
 
 ## Who absorbs the P&L of the overall pool?
 
-The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These are stakeholders that are absorbing the overall risk of the entire pool in exchange of trading fees (tbc and performance fees) paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
+The gains and losses of the overall investment pool are absorbed by the pool performance underwriters. These is/are stakeholder(s) that are absorbing the overall risk of the entire pool in exchange of trading fees paid by the investors as a result of their trading activity. In a situation where investors have opposite exposures (e.g. short vs long), the overall market risk of the pool will be low and the gains of some investors will be absorbed the losses of others investors. If the overall pool is imbalanced (e.g. all investors are long) the overall gains and losses will be covered by the underwriters. See next section for more information.
 
 ?> The gains and losses of the investment pool is absorbed by the pool performance underwriters
 
 ## Pool performance underwriters
 
-The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any net gains and losses are absorbed by the pool performance underwriters. The underwriters have to collateralize the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an underwriter provide 100 of collateral but the amount of debt he owns is worth 120, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
+The value of overall investment pool is a function of the net total supply of each synthetic assets and the prevailing prices at that time. Any net gains and losses are absorbed by the pool performance underwriters. The underwriters have to collateralize a fraction of the amount of debt they own and any losses is monetized by the corresponding amount of collateral locked in the protocol. E.g. if an underwriter provide 100 of collateral and he faces a loss of 20, a net amount of 20 will be kept, i.e. the investor will be able to repatriate only 80 worth of collateral if his exposure is liquidated.
 
 ?> underwriters are absorbing the risks of the overall investment pool
 
@@ -67,6 +65,6 @@ Investors need a digital wallet to interact with the protocol. Investors need to
 
 ## Reference assets
 
-The reference asset is defined as the reference "currency" of the protocol and is used as reference to calculate the profit and losses of each investor. It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether.
+The reference asset is defined as the reference "currency" of the protocol and is used as reference to calculate the profit and losses of each investor. It's envisaged that Ether will be the reference currency and therefore any profit and losses will be calculated against the performance of Ether. However the platform provider could use an other reference currency as long as the currency is onchain (e.g. a stablecoin).
 
-?> The reference asset of uTradeFi is Ether. The gains and losses are calculated against the reference asset
+?> The reference asset of uTradeFi is envisaged to be Ether. The gains and losses are calculated against the reference asset
