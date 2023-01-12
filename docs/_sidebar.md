@@ -9,4 +9,3 @@
 * [Risks](risk.md "Overview of key risks")
 * [Architecture](architecture.md "System overview")
 * [Smart Contracts]
-* [Screenshots](screenshots.md "Screenshots")
