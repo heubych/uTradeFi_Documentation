@@ -6,6 +6,6 @@ under construction
 
 The screenshot shows the position in Ether of the connected wallet to the protocols
 
-<img src='/image/wallet.png'></img>
+<img src='https://utradefi.herokuapp.com/documentation/docs/image/wallet.png'></img>
 
 ## To be written
